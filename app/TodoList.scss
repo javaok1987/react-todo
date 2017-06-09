@@ -1,0 +1,121 @@
+.todo-list {
+  text-align: left;
+  width: 495px;
+  margin: 0 auto;  
+}
+
+.todo-list::after {
+  clear: both;
+}
+
+ul>li {
+  text-align: left;
+  clear: both;
+  line-height: 2.7rem;
+  list-style-type: none;
+  padding-bottom: .5rem;
+  border-bottom: 1px dashed #999;
+}
+
+li+li {
+  margin-top: 1rem;
+  
+}
+
+li button {
+  margin-right: .5rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+input {
+  width: 100px;
+  height: 32px;
+  margin: 0 .5rem;
+  font-size: 18px;
+}
+
+button {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 2px rgba(0, 0, 0, .15);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+  background: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #fbfbfb), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: linear-gradient(to bottom, #fbfbfb, #e1e1e1);
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #d4d4d4;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 25.6px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #666;
+  text-shadow: 0 1px 1px #fff;
+  margin: 0;
+  text-decoration: none;
+  text-align: center
+}
+
+.todo-footer {
+  width: 448px;
+  height: 40px;
+  margin-left: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.todo-footer>input[name="newTask"] {
+  width: 328px;
+  display: block;
+  box-sizing: border-box;
+  line-height: normal;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+  border-radius: 3px 0 0 3px;
+  min-width: 230px;
+  height: 40px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 0 10px;
+  color: #999;
+  border-right: none;
+  float: left;
+  margin: 0;
+}
+
+.todo-footer>button {
+  background: linear-gradient(top, #FFF, #EEE);
+  border-radius: 0 3px 3px 0;
+  float: right;
+  height: 40px;
+  border: 1px solid #CCC;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 120px;
+}
+
+.taskLabel {
+  cursor: pointer;
+  color: #333;
+  /*border-bottom: 4px solid #666;*/
+  padding-right: 3px;
+  font-size: 24px;
+}
+
+.taskLabel::before{
+  content: "♨ ";
+}
+
+.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.buttonGroup{
+  text-align: right;
+}
